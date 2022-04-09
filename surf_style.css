@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    width: 700px;
+    height:700px;
+    border: 4px solid blue;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5%;
+    position: relative;
+}
+
+
+#surfer{
+    background-image: url(Images/surfer_right_outline.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 11%; /*change surfer size */
+    height: 0;
+    padding-bottom: 14%;
+    background-size: 100%;
+    left: 25%;
+    right: 25%;
+    margin-top: 85%;
+
+    /*the above code assume the jpeg is a square, which it is not. Therefore is cuts off some height
+    Also, i need to center this on the page */
+}
+
+
+/*start styling the obstacle */
+#rock{
+    background-image: url(Images/blackrock.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 12%;
+    height: 0;
+    padding-bottom: 12%; 
+    background-size: 100%; /* without this, it's just a condensed image/line */
+    overflow: hidden;
+    left: 400px; /* moves the obstacle right and left (must be between 0px (far left) and 680 (far right) */
+    animation: rock 3s infinite linear;
+}
+
+/*create animation to make block slide top to bottom */
+@keyframes rock{
+    0%{top:0px}
+    100%{top:690px}
+}
+
+
+/*start styling the shark */
+#shark{
+    background-image: url(Images/shark2.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 10%;
+    height: 0;
+    padding-bottom: 12%; 
+    background-size: 100%; /* without this, it's just a condensed image/line */
+    overflow: hidden;
+    left: 400px; /* moves the obstacle right and left (must be between 0px (far left) and 680 (far right) */
+    animation: shark 2.8s infinite linear;
+}
+
+@keyframes shark{
+    0%{top:0px}
+    100%{top:690px}
+}
+
+
+#swimmer{
+    background-image: url(Images/swimmer.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 8%;
+    height: 0;
+    padding-bottom: 12%; 
+    background-size: 100%; /* without this, it's just a condensed image/line */
+    overflow: hidden;
+    left: 400px; /* moves the obstacle right and left (must be between 0px (far left) and 680 (far right) */
+    animation: swimmer 3s infinite linear;
+}
+
+@keyframes swimmer{
+    0%{top:0px}
+    100%{top:690px}
+}
+
+#trash{
+    background-image: url(Images/trash.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 8%;
+    height: 0;
+    padding-bottom: 12%; 
+    background-size: 100%; /* without this, it's just a condensed image/line */
+    overflow: hidden;
+    left: 400px; /* moves the obstacle right and left (must be between 0px (far left) and 680 (far right) */
+    animation: trash 3.5s infinite linear;
+}
+
+@keyframes trash{
+    0%{top:0px}
+    100%{top:690px}
+}
+
+
+
+
+
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10vm;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#score{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10vm;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+div.container4 {
+    height: 10em;
+    position: relative;
+}
+
+div.container4 p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+
+/* Old obstacle code just in case I need it
+#obstacle{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 80%;
+    position: relative;
+    top: 10px; not sure what this does 
+    left: 400px; 
+    animation: obstacle 3s infinite linear;
+}
+@keyframes obstacle{
+    0%{top:0px}
+    100%{top:690px}
+}
+
+*/
