@@ -1,5 +1,7 @@
 # SharkSurfer
 
+[Here is a link to play the game!](https://aidanosulli.github.io/SharkSurfer/)
+
 This is the first video game I have ever created! Many thanks to my friends whom inspired me, and to [KnifeCircus on Youtube](https://www.youtube.com/channel/UCwjglHy7pCPF4ES-S7FKxQg), 
 whose code I often used as abenchmark. 
 
