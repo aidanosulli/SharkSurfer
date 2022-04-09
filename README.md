@@ -8,7 +8,7 @@ The three files containing all the code can be found on the master branch, named
 To play, simply move the surfer with the left and right arrow keys to avoid the obstacles.
 
 ---
-Here is some sample game play
+Here is some sample game play. Enjoy!
 
 ![](ezgif.com-gif-maker.gif)
 
